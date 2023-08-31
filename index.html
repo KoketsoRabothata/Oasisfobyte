@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="index.js" defer></script>
+</head>
+
+<body>
+    <!-- RESPONSIVE NAV-BAR -->
+    <header>
+        <div class="logo">DesignTech</div>
+        <div class="hamburger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+        <nav class="nav-bar">
+            <ul>
+                <li>
+                    <a href=""><span class="pop-on-hover">Home</span></a>
+                </li>
+                <li>
+                    <a href=""><span class="pop-on-hover">Services</span></a>
+                </li>
+                <li>
+                    <a href=""><span class="pop-on-hover">Feedback</span></a>
+                </li>
+                <li>
+                    <a href=""><span class="pop-on-hover">About</span></a>
+                </li>
+                <li>
+                    <a href=""><span class="pop-on-hover">Contact</span></a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="home"></section>
+
+
+    <!-- HERO SECTION STYLING -->
+    <section class="home" id="home">
+        <header class="head">WELCOME TO DESIGN TECH</header>
+        <div class="home-content">
+            <div class="text">
+                <div class="text-two word ">HELLO,I'M KOKETSO RABOTHATA</div>
+                <div class="text-three word ">UI & UX</div>
+                <div class="text-four  word ">DESIGNER</div>
+            </div>
+            <div class="button">
+                <button>EXPLORE</button>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        const animate1 = (word) => {
+   word.classList.add("animate");
+}
+
+   let  word = document.querySelectorAll(".word") 
+       
+       const animateAll = (animate) => {
+           setTimeout( () => {
+               animate1(word[0]);
+               setTimeout(() =>{
+                   animate1(word[1]);
+                   setTimeout(() =>{
+                       animate1(word[2])
+                   }, 1000)
+               }, 1000) 
+           }, 1000) 
+}
+
+animateAll(animate1) 
+   </script>
+
+
+
+<!--  -->
+
+
+
+
+
+</body>
+
+</html>
