@@ -4,84 +4,360 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Koketso Rabothata Portfolio</title>
     <link rel="stylesheet" href="style.css">
     <script src="index.js" defer></script>
+    <link rel="stylesheet" href="download">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofGJopfM5L6L6z5l72EN5/6b1p2QZpxqM" crossorigin="anonymous">
+
 </head>
 
 <body>
-    <!-- RESPONSIVE NAV-BAR -->
-    <header>
-        <div class="logo">DesignTech</div>
+    <!-- RESPONSIVE NAV-BAR --
+<!-- navgation menu -->
+<nav>
+    <div class="navbar">
+        <div class="logo"><a href="#home">PORTFOLIO.</a></div>
         <div class="hamburger">
             <div class="line"></div>
             <div class="line"></div>
             <div class="line"></div>
         </div>
-        <nav class="nav-bar">
-            <ul>
-                <li>
-                    <a href=""><span class="pop-on-hover">Home</span></a>
-                </li>
-                <li>
-                    <a href=""><span class="pop-on-hover">Services</span></a>
-                </li>
-                <li>
-                    <a href=""><span class="pop-on-hover">Feedback</span></a>
-                </li>
-                <li>
-                    <a href=""><span class="pop-on-hover">About</span></a>
-                </li>
-                <li>
-                    <a href=""><span class="pop-on-hover">Contact</span></a>
-                </li>
-            </ul>
-        </nav>
-    </header>
 
-    <section class="home"></section>
+        <ul class="menu">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
+          
+        </ul>
+        <div class="social-icons">
+            <li><a href="#" target="_blank"><i class="fab fa-facebook"></i></a></li>
+            <li><a href="#" target="_blank"><i class="fab fa-twitter"></i></a></li>
+            <li><a href="#" target="_blank"><i class="fab fa-instagram"></i></a></li>
+            <a href="#"><i class="fa fa-envelope"></i></a>
+        </div>
+    </div>
 
+       
+</nav>
+  
 
-    <!-- HERO SECTION STYLING -->
+    <!-- home section styling -->
+
     <section class="home" id="home">
-        <header class="head">WELCOME TO DESIGN TECH</header>
         <div class="home-content">
             <div class="text">
-                <div class="text-two word ">HELLO,I'M KOKETSO RABOTHATA</div>
-                <div class="text-three word ">UI & UX</div>
-                <div class="text-four  word ">DESIGNER</div>
+                <div class="text-one">Hello,I'm Koketso Rabothata</div>
+                <div class="text-two">UI & UX </div>
+                <div class="text-three">DESIGNER/PROJECT MANAGER</div>
+                <div class="text-four">Freelance Web Designer And Developer. From South Africa ,Johannesburg.</div>
             </div>
             <div class="button">
-                <button>EXPLORE</button>
+                <button>Hire Me</button>
             </div>
         </div>
     </section>
 
-    <script>
-        const animate1 = (word) => {
-   word.classList.add("animate");
-}
+    <!-- about section -->
+    <section class="about" id="about">
+        <div class="content"> 
+            <div class="title"><span>ABOUT ME</span></div>
+            <div class="about-details">
+                <div class="left">
+                    <img src="images/kkkkk.PNG" alt="">
+                </div>
+                <div class="right">
+                    <div class="topic">Hello,my name is Koketso Rabothata,I'm 20 years of age, i'm from Roodepoort and have a passion for technology.
+    
+                        I'm a passionate young adult devling into the dynamic realm of technology,fervently 
+                        exploring the intricacies of software development.Fueled by curiosity and a relentless
+                        drive to innovate,I aspire to master the digital landscape and pave my way into the realm
+                        of cybersecurity,where challenges become opportunities for growth. Join me on this exhilarating
+                        journey as i code my aspirations into reality and safeguard the digital future.
+                    
+                    </div>
+               </div>
+            </div>
+        </div>
+       </section>
 
-   let  word = document.querySelectorAll(".word") 
-       
-       const animateAll = (animate) => {
-           setTimeout( () => {
-               animate1(word[0]);
-               setTimeout(() =>{
-                   animate1(word[1]);
-                   setTimeout(() =>{
-                       animate1(word[2])
-                   }, 1000)
-               }, 1000) 
-           }, 1000) 
-}
+ <!-- education section start -->
+ <section class="education" id="education">
+    <div class="content"> 
+        <div class="title"><span>EDUCATION</span></div>
+        <div class="education-details">
+            <div class="left">
+                <img src="images/kkkkk.PNG" alt="">
+            </div>
+            <div class="right">
+                <div class="topic">
+                    <p class="queens">
+                   <h1> BACHELOR PASS MATRIC</h1>
+                    Queens High School - Johannesburg <br>
+                    2017-2021
+                    </p>
 
-animateAll(animate1) 
-   </script>
+                    <p class="project">
+                        <h1>PROJECT MANAGEMENT NQF LEVEL 4 </h1>
+                        Believers Care Society - Turffontein<br>
+                        2022-2023
+                         </p>
+
+                         <p class="software">
+                            <h1>SYSTEMS DEVELOPMENT NQF LEVEL 4</h1>
+                            Believers Care Society - Booysens<br>
+                            2023-2024
+                             </p>
+                </div>
+                <br>
+                <div class="button">
+                    <a href="./download/Koketso Rabothata Resume .pdf" download>
+                        <button>Download CV</button>
+                </div>
+                
+           </div>
+        </div>
+    </div>
+   </section>
+
+   <!-- skills section start -->
+   <section class="skills" id="skills">
+    <div class="content">
+        <div class="title"><span>MY SKILLS </span></div>
+        <div class="skills-details">
+            <div class="text">
+                <div class="topic">Skills Reflect Our Knowledge:</div>
+                <p></p>
+                <div class="experience">
+                    <div class="num">1</div>
+                    <div class="exp">+ Years of <br> Experience</div>
+                </div>
+            </div>
+            <div class="boxes">
+                <div class="box">
+                    <div class="topic">CSS</div>
+                    <div class="per">80%</div>
+                </div>
+                <div class="box">
+                    <div class="topic">HTML</div>
+                    <div class="per">90%</div>
+                </div>
+                <div class="box">
+                    <div class="topic">Python</div>
+                    <div class="per">30%</div>
+                </div>
+                <div class="box">
+                    <div class="topic">JavaScript</div>
+                    <div class="per">75%</div>
+                </div>
+                <div class="box">
+                    <div class="topic">Networking</div>
+                    <div class="per">79%</div>
+                </div>
+                <div class="box">
+                    <div class="topic">NodeJS</div>
+                    <div class="per">12%</div>
+                </div>
+                <div class="box">
+                    <div class="topic">Web Design</div>
+                    <div class="per">80%</div>
+                </div>
+                <div class="box">
+                    <div class="topic">PHP</div>
+                    <div class="per">5%</div>
+                </div>
+                <div class="box">
+                    <div class="topic">MySQL</div>
+                    <div class="per">5%</div>
+                </div>
+                <div class="box">
+                    <div class="topic">Django</div>
+                    <div class="per">5%</div>
+                </div>
+                <div class="box">
+                    <div class="topic">Figma</div>
+                    <div class="per">80%</div>
+                </div>
+                <div class="box">
+                    <div class="topic">Microsoft</div>
+                    <div class="per">90%</div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- services section start -->
+        <!-- SERVICE SECTION START -->
+    <section class="services" id="services">
+        <div class="content">
+            <div class="title"><span>SERVICES</span></div>
+            <div class="boxes">
+                <div class="box">
+                    <div class="icon">
+                        <i class="fa fa-desktop"></i>
+                    </div>
+                    <div class="topic">Web Development</div>
+                    <p class="p">My web design service is dedicated to creating visually pleasing website that are user friendly, boost consumer traffic and create an image of the company.</p>
+                </div>
+                <div class="box">
+                    <div class="icon">
+                        <i class="fa fa-database" aria-hidden="true"></i>
+                    </div>
+                    <div class="topic">Networking</div>
+                    <p class="p">My networking service is dedicated to creating a fully functioning network that has internet connection and is properly wired.</p>
+                </div>
+                <div class="box">
+                    <div class="icon">
+                        <i class="fa fa-paint-brush"></i>
+                    </div>
+                    <div class="topic">Graphic Design</div>
+                    <p class="p">My graphic design service offers a wide range of designing specified and tailor made to the users wants.</p>
+                </div>
+                <div class="box">
+                    <div class="icon">
+                        <i class="fa fa-line-chart" aria-hidden="true"></i>
+                    </div>
+                    <div class="topic">Digital Marketing</div>
+                    <p class="p">My digital marketing service offers a way in which users can tailor make their website however they see fit.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!-- contact page section -->
+ <section class="contact" id="contact">
+        <div class="content">
+            <div class="title"><span>CONTACT ME</span></div>
+            
+            <div class="contact-details">
+                <div class="text">
+                
+                    <div class="text-2">
+                        Let's create something together
+                    </div>
+                        <div class="text-three">
+                            <span>Mail me at</span><br>rabothatakoketso0902@gmail.com
+                        </div>
+                    </div>
+                </div>
+                <div class="table">
+                    <div class="ss">Send me a message <i class="fa fa-plane" aria-hidden="true"></i></div>
+                    <br>
+                    <form action="/my-handling-form-page" method="post">
+                        <input class="nam" type="text" id="name" name="user_name" placeholder="Fullname">
+                        <br>
+                        <br>
+                        <input class="em" type="email" id="mail" name="user_email" placeholder="Email address">
+                        <br>
+                        <br>
+                        <input class="sub" type="text" id="msg" name="user_message" placeholder="Subject">
+                        <br>
+                        <br>
+                        <input class="mes" id="msg" name="user_message" placeholder="Message">
+                        <br>
+                        <br>
+                        <div class="button">
+                            <button type="submit">Send Message</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div> 
+    </section>
+    
+    <!-- footer section -->
+    <footer>
+        <ul class="social-icons">
+            <li><a href="#" target="_blank"><i class="fab fa-facebook"></i></a></li>
+            <li><a href="#" target="_blank"><i class="fab fa-twitter"></i></a></li>
+            <li><a href="#" target="_blank"><i class="fab fa-instagram"></i></a></li>
+           
+        </ul>
+        <p>&copy; 2023 Koketso Rabothata Portfolio. All Rights Reserved.</p>
+    </footer>
 
 
 
-<!--  -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
